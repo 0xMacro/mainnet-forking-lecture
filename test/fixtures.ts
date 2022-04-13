@@ -11,7 +11,7 @@ describe("Fixtures", function () {
     // The slow way:
     usdcContractArray = await someLongSetup()
 
-    // The FAST way (uncomment me!):
+    // The FAST way (uncomment the line below and comment out the line above):
     // usdcContractArray = await loadFixture(usdcFixture);
   })
 
