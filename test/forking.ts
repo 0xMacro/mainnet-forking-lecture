@@ -1,4 +1,6 @@
 import { SignerWithAddress } from "@nomiclabs/hardhat-ethers/signers";
+import * as helpers from "@nomicfoundation/hardhat-network-helpers";
+
 import { expect } from "chai";
 import hre, { ethers } from "hardhat";
 
@@ -25,10 +27,7 @@ describe("USDC mainnet forking", function () {
 
     // Impersonate as the owner of the master USDC minter contract
     // so we can mint some USDC for Alice
-    await hre.network.provider.request({
-      method: "hardhat_impersonateAccount",
-      params: [ownerOfMasterMinter],
-    });
+    await helpers.impersonateAccount(ownerOfMasterMinter);
 
     // setup all the contract state we'll need
     const impersonatedSigner: SignerWithAddress = await ethers.getSigner(ownerOfMasterMinter);

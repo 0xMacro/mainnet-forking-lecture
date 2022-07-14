@@ -1,9 +1,8 @@
-import { SignerWithAddress } from "@nomiclabs/hardhat-ethers/signers";
-import { expect } from "chai";
-import hre, { ethers, waffle } from "hardhat";
-import { FiatTokenV2 } from "../typechain";
 
-const loadFixture = waffle.loadFixture
+import { ethers } from "hardhat";
+import { loadFixture } from "@nomicfoundation/hardhat-network-helpers";
+
+import { FiatTokenV2 } from "../typechain-types";
 
 describe("Fixtures", function () {
   let usdcContractArray;
