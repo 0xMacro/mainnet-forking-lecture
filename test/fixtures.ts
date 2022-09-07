@@ -9,50 +9,47 @@ describe("Fixtures", function () {
   beforeEach(async () => {
     // The slow way:
     usdcContractArray = await someLongSetup()
-
-    // The FAST way (uncomment the line below and comment out the line above):
-    // usdcContractArray = await loadFixture(usdcFixture);
   })
 
   it("it", async () => {
-    
+    // const usdcContractArray = await loadFixture(usdcFixture);
   })
 
   it("seems", async () => {
-    
+    // const usdcContractArray = await loadFixture(usdcFixture);
   })
 
   it("to", async () => {
-    
+    // const usdcContractArray = await loadFixture(usdcFixture);
   })
 
   it("be", async () => {
-    
+    // const usdcContractArray = await loadFixture(usdcFixture);
   })
   it("taking", async () => {
-    
+    // const usdcContractArray = await loadFixture(usdcFixture);
   })
 
   it("a", async () => {
-    
+    // const usdcContractArray = await loadFixture(usdcFixture);
   })
   it("long", async () => {
-    
+    // const usdcContractArray = await loadFixture(usdcFixture);
   })
   it("time...", async () => {
-    
+    // const usdcContractArray = await loadFixture(usdcFixture);
   })
   it("...", async () => {
-    
+    // const usdcContractArray = await loadFixture(usdcFixture);
   })
   it("...", async () => {
-    
+    // const usdcContractArray = await loadFixture(usdcFixture);
   })
   it("...", async () => {
-    
+    // const usdcContractArray = await loadFixture(usdcFixture);
   })
   it("...", async () => {
-    
+    // const usdcContractArray = await loadFixture(usdcFixture);
   })
 
   async function usdcFixture(): Promise<Array<FiatTokenV2>> {
